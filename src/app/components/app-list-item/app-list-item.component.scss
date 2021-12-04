@@ -89,9 +89,10 @@
   }
 }
 
-@media(min-width: 1530px) {
+@media(max-width: 1530px) {
   .divider,
   .divider2 {
     margin: 0;
   }
 }
+
