@@ -1,0 +1,31 @@
+.sidenav-container {
+    width: 300px;
+    height: calc(100vh - 72px);
+    margin-top: 74px;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    background-color: #fff;
+}
+
+.sub-menu-item {
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    padding-left: 95px;
+    cursor: pointer;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+
+    &__active {
+        background-color: #e4f8ee;
+        color: #2cc780;
+        border-right: 6px solid #2cc780;
+    }
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+
+} 

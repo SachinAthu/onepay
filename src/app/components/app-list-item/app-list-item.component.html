@@ -1,0 +1,43 @@
+<div class="app-item-container">
+    <div class="d-flex justify-content-between align-items-center">
+        <h6 class="title text-primary">{{ app.title }}</h6>
+
+        <!-- <div class="badge" [ngSwitch]="app.status">
+            <span *ngSwitchCase="'LIVE'">live</span>
+        </div> -->
+        <span class="badge badge__live" *ngIf="app.status === 'LIVE'">LIVE</span>
+        <span class="badge badge__on-development" *ngIf="app.status === 'ON_DEVELOPMENT'">On Development</span>
+        <span class="badge badge__submitted" *ngIf="app.status === 'SUBMITTED'">Submitted for Approvement</span>
+    </div>
+
+    <h6 class="mt-4 mb-3">Description</h6>
+
+    <p class="description">{{ app.description }}</p>
+
+    <p class="appid"><strong>APP ID : </strong>{{ app.appId }}</p>
+
+    <p class="services"><strong>Services : </strong>{{ app.services }}</p>
+
+    <!-- buttons -->
+    <div *ngIf="app.status === 'LIVE'" class="d-flex justify-content-between align-items-center action-buttons">
+        <a class="btn" (click)="onDisable()">Disable App</a>
+        <div class="divider"></div>
+        <a class="btn" (click)="onView()">View</a>
+        <div class="divider"></div>
+        <a class="btn">Request to update</a>
+    </div>
+
+    <div *ngIf="app.status === 'ON_DEVELOPMENT'" class="d-flex justify-content-between align-items-center action-buttons">
+        <a class="btn" (click)="onView()">View</a>
+        <div class="divider"></div>
+        <a class="btn" (click)="onUpdate()">Update</a>
+        <div class="divider"></div>
+        <a class="btn" (click)="onSubmit()">Submit for Approvement</a>
+    </div>
+
+    <div *ngIf="app.status === 'SUBMITTED'" class="d-flex justify-content-end align-items-center action-buttons">
+        <a class="btn" (click)="onView()">View</a>
+        <div class="divider2"></div>
+        <a class="btn" (click)="onUpdate()">Request to update</a>
+    </div>
+</div>

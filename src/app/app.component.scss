@@ -1,0 +1,11 @@
+.app-container {
+    width: 100%;
+}
+
+main {
+    min-height: calc(100vh - 72px);
+    margin-top: 72px;
+    margin-left: 300px;
+    padding: 2.5rem 0.6rem;
+    background-color: #f2f2f7;
+}

@@ -1,1 +1,116 @@
-/* You can add global styles to this file, and also import other style files */
+@use "sass:map";
+@import "customize-bootstrap.scss";
+
+// fonts
+@font-face {
+  font-family: "Montserrat";
+  src: url("assets/fonts/Montserrat/Montserrat-Black.woff2") format("woff2"),
+    url("assets/fonts/Montserrat/Montserrat-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("assets/fonts/Montserrat/Montserrat-ExtraBold.woff2") format("woff2"),
+    url("assets/fonts/Montserrat/Montserrat-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("assets/fonts/Montserrat/Montserrat-Bold.woff2") format("woff2"),
+    url("assets/fonts/Montserrat/Montserrat-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("assets/fonts/Montserrat/Montserrat-SemiBold.woff2") format("woff2"),
+    url("assets/fonts/Montserrat/Montserrat-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("assets/fonts/Montserrat/Montserrat-Medium.woff2") format("woff2"),
+    url("assets/fonts/Montserrat/Montserrat-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("assets/fonts/Montserrat/Montserrat-Regular.woff2") format("woff2"),
+    url("assets/fonts/Montserrat/Montserrat-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("assets/fonts/Montserrat/Montserrat-Light.woff2") format("woff2"),
+    url("assets/fonts/Montserrat/Montserrat-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("assets/fonts/Montserrat/Montserrat-Thin.woff2") format("woff2"),
+    url("assets/fonts/Montserrat/Montserrat-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("assets/fonts/Montserrat/Montserrat-ExtraLight.woff2")
+      format("woff2"),
+    url("assets/fonts/Montserrat/Montserrat-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+// variables
+$primary-font: "Montserrat";
+$success-dark: #225b46;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%; // 1rem = 16px default value
+}
+
+body {
+  font-family: $primary-font, sans-serif;
+  box-sizing: border-box;
+  //   padding: 3rem;
+}
+
+.inner-component-wrapper {
+  width: 100%;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+}
+

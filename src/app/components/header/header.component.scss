@@ -1,0 +1,29 @@
+nav {
+    height: 72px;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.1);
+}
+
+#oneplay-logo{
+    width: 180px;
+}
+
+#username {
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+#user-profile-img {
+    width: 45px;
+    border-radius: 20px;
+}
+
+#user-profile-dropdown{
+    z-index: 10000;
+}
+
+// @media(min-width: 576px) {
+//     #navbarScrollingDropdown {
+//         visibility: hidden;
+//     }
+// }

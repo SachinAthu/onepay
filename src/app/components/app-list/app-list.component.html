@@ -1,0 +1,15 @@
+<div class="inner-component-wrapper">
+    <button class="btn btn-success mb-4" (click)="addNewApp()">Add New App</button>
+
+    <div class="row justify-content-start g-3" [ngStyle]="{ 'padding': '0' }">
+        <div *ngFor="let app of appList" class="col-xl-4 col-lg-6">
+            <app-app-list-item 
+                [app]="app"
+                (onDisableApp)="disableApp(app)"
+                (onViewApp)="viewApp(app)"
+                (onUpdateApp)="updateApp(app)"
+                (onSubmitApp)="submitApp(app)"
+            ></app-app-list-item>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,70 @@
+<nav class="navbar navbar-expand-md navbar-light bg-white px-3 py-2 fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/">
+      <img
+        id="oneplay-logo"
+        class="img-fluid"
+        src="../../../assets/images/onepay_logo.png"
+        alt="logo"
+      />
+    </a>
+
+    <!-- <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarScroll"
+      aria-controls="navbarScroll"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button> -->
+
+    <div id="navbarScroll">
+      <ul
+        class="navbar-nav navbar-nav-scroll ms-auto d-flex"
+      >
+
+        <li class="nav-item dropdown d-flex align-items-center">
+          <span id="username" class="md mx-3">Jhon Peter</span>
+
+          <img
+            id="user-profile-img"
+            src="../../../assets/images/user.jpg"
+            alt="user profile"
+            class="ml-3"
+          />
+
+          <a
+            class="nav-link dropdown-toggle mx-1"
+            href="#"
+            id="navbarScrollingDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+          </a>
+
+          <ul
+            id="user-profile-dropdown"
+            class="dropdown-menu"
+
+            aria-labelledby="navbarScrollingDropdown"
+          >
+            <li><a class="btn dropdown-item">Profile</a></li>
+            <li><a class="btn dropdown-item">Status</a></li>
+            <li><hr class="dropdown-divider"/></li>
+            <li><a class="btn dropdown-item">Logout</a></li>
+          </ul>
+        </li>
+
+        <li class="d-flex nav-item align-items-center ml-3">
+            <a class="btn">
+                <fa-icon [icon]="faMoonRegular"></fa-icon>
+            </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

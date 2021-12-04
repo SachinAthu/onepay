@@ -1,0 +1,33 @@
+<div class="sidenav-container d-flex flex-column pt-5 fixed-top">
+  <div class="accordion accordion-flush" id="main-link1">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="main-link-heading-1">
+        <button
+          class="accordion-button"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapse1"
+          aria-expanded="true"
+          aria-controls="collapse1"
+        >
+            <div class="d-flex">
+                <fa-icon [icon]="faHome" class="mr-3" [ngStyle]="{ 'margin-right': '30px' }"></fa-icon> 
+                <span class="ml-3">IPG Developer</span> 
+            </div>
+        </button>
+      </h2>
+      <div
+        id="collapse1"
+        class="accordion-collapse collapse show"
+        aria-labelledby="main-link-heading-1"
+        data-bs-parent="#main-link1"
+      >
+        <div class="accordion-body d-flex flex-column">
+          <a id="sub-menu-item-apps" class="sub-menu-item sub-menu-item__active">Apps</a>
+          <a id="sub-menu-item-1" class="sub-menu-item">Sub link2</a>
+          <a id="sub-menu-item-2" class="sub-menu-item">Sub link3</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

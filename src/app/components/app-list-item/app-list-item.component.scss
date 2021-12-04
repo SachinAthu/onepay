@@ -1,0 +1,97 @@
+.app-item-container {
+  // min-width: 200px;
+  // max-width: 400px;
+  height: auto;
+  padding: 14px;
+  box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+
+  h6 {
+    margin-bottom: 0;
+  }
+
+  .badge {
+    font-size: 10px;
+    font-weight: 600;
+    padding: 6px 8px;
+    border-radius: 5px;
+
+    &__live {
+      color: #ff1414;
+      background-color: #fecbcb;
+    }
+
+    &__on-development {
+      color: #828282;
+      background-color: #ececec;
+    }
+
+    &__submitted {
+      color: #225b46;
+      background-color: #ccffe7;
+    }
+  }
+
+  .description,
+  .appid,
+  .services {
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  .description {
+    margin-bottom: 30px;
+  }
+
+  .appid,
+  .services {
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 1rem;
+
+    strong {
+      font-size: 14px;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.7);
+    }
+  }
+
+  .action-buttons {
+      margin-top: 30px;
+  }
+
+  a {
+    color: #225b46;
+    padding: 0;
+    font-size: 15px;
+    font-weight: 600;
+
+    &:hover {
+        color: rgba(34, 91, 70, 0.8);
+    }
+  }
+
+  .divider,
+  .divider2 {
+      height: 25px;
+      width: 2px;
+      background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .divider {
+    margin: 0 10px;
+  }
+
+  .divider2 {
+    margin: 0 20px;
+  }
+}
+
+@media(min-width: 1530px) {
+  .divider,
+  .divider2 {
+    margin: 0;
+  }
+}

@@ -1,0 +1,51 @@
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+$primary: #2260ff;
+$success-dark: #225b46;
+$danger: #ff6767;
+
+// breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 1400px,
+  xl: 1500px,
+  xxl: 1600px
+);
+
+// custom color map
+$custom-colors: (
+  "success-dark": #225b46
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+
+
+// accordian
+.accordion-button:focus,
+.accordion-button:active {
+    box-shadow: none;
+}
+
+.accordion-button {
+    color: rgba(0, 0, 0, 0.6);
+    background-color: #fff;
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    color: rgba(0, 0, 0, 0.6);
+    background-color: #fff;
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-body {
+    padding: 0;
+}
