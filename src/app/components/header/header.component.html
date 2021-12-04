@@ -43,37 +43,24 @@
       />
     </a>
 
-    <!-- <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarScroll"
-      aria-controls="navbarScroll"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button> -->
-
-    <div class="navbar-nav d-flex ms-auto">
-      <div class="nav-item dropdown d-flex align-items-center">
-        <span id="username" class="md mx-3">Jhon Peter</span>
-
-        <img
-          id="user-profile-img"
-          src="../../../assets/images/user.jpg"
-          alt="user profile"
-          class="ml-3"
-        />
-
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item dropdown">
         <a
-          class="nav-link dropdown-toggle mx-1"
-          href="#"
-          id="navbarScrollingDropdown"
-          role="button"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
+        class="nav-link dropdown-toggle"
+        href="#"
+        id="navbarScrollingDropdown"
+        role="button"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
         >
+          <span id="username" class="">Jhon Peter</span>
+
+          <img
+            id="user-profile-img"
+            src="../../../assets/images/user.jpg"
+            alt="user profile"
+            class=""
+          />
         </a>
 
         <ul
@@ -87,10 +74,11 @@
           <li><a class="btn dropdown-item">Logout</a></li>
         </ul>
 
-        <a id="dark-theme-btn" class="btn">
-          <fa-icon [icon]="faMoonRegular"></fa-icon>
-        </a>
-      </div>
-    </div>
+      </li>
+
+      <!-- <a id="dark-theme-btn" class="btn">
+        <fa-icon [icon]="faMoonRegular"></fa-icon>
+      </a> -->
+    </ul>
   </div>
 </nav>

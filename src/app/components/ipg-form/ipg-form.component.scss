@@ -7,6 +7,11 @@ form {
         font-weight: 500;
     }
 
+    input {
+        font-size: 15px;
+        color: rgba(0, 0, 0, 0.8);
+    }
+
     input::placeholder {
         font-size: 13px;
     }

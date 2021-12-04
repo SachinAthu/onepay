@@ -16,6 +16,7 @@ import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { IpgFormComponent } from './components/ipg-form/ipg-form.component';
 import { AppListComponent } from './components/app-list/app-list.component';
 import { AppListItemComponent } from './components/app-list-item/app-list-item.component';
+import { ToastComponent } from './components/toast/toast.component';
 
 const appRoutes: Routes = [
   { path: 'apps', component: AppsComponent },
@@ -35,6 +36,7 @@ const appRoutes: Routes = [
     IpgFormComponent,
     AppListComponent,
     AppListItemComponent,
+    ToastComponent,
   ],
   imports: [
     BrowserModule,
