@@ -11,7 +11,7 @@
           aria-controls="collapse1"
         >
             <div class="d-flex">
-                <fa-icon [icon]="faHome" class="mr-3" [ngStyle]="{ 'margin-right': '30px' }"></fa-icon> 
+                <fa-icon [icon]="faHome" class="mr-3" [ngStyle]="{ 'margin-right': '25px' }"></fa-icon> 
                 <span class="ml-3">IPG Developer</span> 
             </div>
         </button>
@@ -23,9 +23,9 @@
         data-bs-parent="#main-link1"
       >
         <div class="accordion-body d-flex flex-column">
-          <a id="sub-menu-item-apps" class="sub-menu-item sub-menu-item__active">Apps</a>
-          <a id="sub-menu-item-1" class="sub-menu-item">Sub link2</a>
-          <a id="sub-menu-item-2" class="sub-menu-item">Sub link3</a>
+          <a class="sub-menu-item sub-menu-item__active" data-bs-dismiss="offcanvas" (click)="navigate($event, 'apps')">Apps</a>
+          <a class="sub-menu-item" data-bs-dismiss="offcanvas" (click)="navigate($event, 'other')">Sub link2</a>
+          <a class="sub-menu-item" data-bs-dismiss="offcanvas" (click)="navigate($event, 'other')">Sub link3</a>
         </div>
       </div>
     </div>

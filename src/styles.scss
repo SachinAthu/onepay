@@ -97,7 +97,7 @@ $success-dark: #225b46;
 }
 
 html {
-  font-size: 100%; // 1rem = 16px default value
+  font-size: 90% !important; // 1rem = 16px default value
 }
 
 body {
@@ -114,3 +114,6 @@ body {
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
 }
 
+.fx-relay-email-input-wrapper {
+  z-index: 5000;
+}

@@ -12,45 +12,20 @@ export class SidenavComponent implements OnInit {
 
   constructor(private _router: Router) {}
 
-  ngOnInit(): void {
-    const links = document.querySelectorAll('.sub-menu-item');
-    for (let i = 0; i < links.length; i++) {
-      links[i]?.addEventListener('click', () => this.navigate(links[i]));
-    }
-  }
-
-  ngOnDestroy() {
-    const links = document.querySelectorAll('.sub-menu-item');
-    for (let i = 0; i < links.length; i++) {
-      links[i]?.removeEventListener('click', () => this.navigate(links[i]));
-    }
-  }
+  ngOnInit(): void { }
 
   // navigate to the route
-  navigate(element: any) {
-    const id = element.id;
-    if (!id) return;
-    // console.log(id);
+  navigate(event: any, route: string) {
+    const target = event.target || event.srcElement || event.currentTarget;
+    const id = target.attributes.id;
+    // console.log(target, id);
 
     const links = document.querySelectorAll('.sub-menu-item');
     for (let i = 0; i < links.length; i++) {
       links[i]?.classList.remove('sub-menu-item__active');
     }
 
-    let route = '/';
-    switch (id) {
-      case 'sub-menu-item-apps':
-        route = '/apps';
-        break;
-      case 'sub-menu-item-1':
-      case 'sub-menu-item-2':
-        route = '/other';
-        break;
-      default:
-        route = '/';
-    }
-
-    document.getElementById(id)?.classList.add('sub-menu-item__active');
+    target?.classList.add('sub-menu-item__active');
     this._router.navigateByUrl(route);
   }
 }

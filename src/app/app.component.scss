@@ -5,7 +5,18 @@
 main {
     min-height: calc(100vh - 72px);
     margin-top: 72px;
-    margin-left: 300px;
+    margin-left: 265px;
     padding: 2.5rem 0.6rem;
     background-color: #f2f2f7;
+
+}
+
+@media (max-width: 768px) {
+    main {
+        margin-left: 0;
+    }
+
+    .sidenav-wrapper {
+        display: none;
+    }
 }

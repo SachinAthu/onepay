@@ -1,6 +1,7 @@
 form {
     border: 1px solid rgba(0, 0, 0, 0.13);
     border-radius: 5px;
+    padding: 2.2rem;
 
     label {
         font-weight: 500;
@@ -12,8 +13,9 @@ form {
 }
 
 #ipg-form-submit {
+    height: 3rem;
     font-weight: 500;
-    padding: 0.45rem 3rem;
+    padding: 0.52rem 3.5rem;
     margin-left: auto !important;
     font-size: 15px;
 }
